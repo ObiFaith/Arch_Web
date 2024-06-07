@@ -1,4 +1,4 @@
-const Container = ({children, className}) => {
+const Container = ({children, className=''}) => {
   return (
     <section className={`container ${className}`}>{children}</section>
   )

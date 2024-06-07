@@ -7,20 +7,16 @@
     /* fs: 12, 14, 16, 22, 24, 40, 64 */
 }
 body{font: 16/1.5 'Roboto', sans-serif; @apply text-base font-light text-black; outline: none;}
-img{@apply max-w-full object-cover}
-h1 span{@apply font-bold}
-a, h6 { @apply text-xs }
-
-h2 { @apply text-2xl }
-h3 { @apply text-[22px] }
+img{@apply object-cover}
+a, h6 { @apply text-xs font-normal}
 h1 { @apply text-[40px] }
-h5 { @apply text-sm font-medium }
+h3 { @apply text-lg font-bold }
 .container + .container{@apply mb-24}
-.title, .sub_title { @apply text-[40px] md:text-[64px] leading-[3rem] text-[#BDBDBD] pb-4}
-.sub_title{@apply text-black}
-a, h6, h3, h2  { @apply font-normal }
+.title, .sub_title { @apply text-[40px] lg:text-6xl text-[#BDBDBD] pb-3}
+.sub_title{@apply text-black font-bold}
 .footer_title{@apply font-bold pb-6}
 
-.btn { @apply py-4 pl-4 pr-6 inline-flex items-center gap-2 hover:shadow-md}
-.btn_dark{@apply bg-black text-white }
 .btn_light{@apply bg-white }
+.btn_dark{@apply bg-black text-white }
+.btn { @apply py-4 pl-4 pr-6 inline-flex items-center gap-2 hover:shadow-md}
+input, textarea{@apply bg-[#F3F3F3] px-4 py-2 w-full focus:outline-none}
