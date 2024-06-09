@@ -8,7 +8,7 @@
 }
 body{font: 16/1.5 'Roboto', sans-serif; @apply text-base font-light text-black; outline: none;}
 img{@apply object-cover}
-a, h6 { @apply text-xs font-normal}
+a, h6 { @apply md:text-xs text-[10px] font-normal}
 h1 { @apply text-[40px] }
 h3 { @apply text-lg font-bold }
 .container + .container{@apply mb-24}

@@ -11,7 +11,7 @@ const Header = () => {
         <nav className="lg:w-2/3">
           <ul className="flex gap-4 sm:gap-12 md:gap-16 lg:gap-28 w-3/4"> {navLinks.map(link => (
             <li key={link}>
-              <NavLink to={link !== 'Main' ? `/${link.toLowerCase()}` : '/'} className={({isActive}) => isActive ? 'border-y-2 border-black py-1 md:px-3.5 px-2 tracking-widest transition-all' : 'tracking-widest hover:text-grey'}>{link.toUpperCase()}</NavLink>
+              <NavLink to={link !== 'Main' ? `/${link.toLowerCase()}` : '/'} className={({isActive}) => isActive ? 'border-y-2 border-black py-1 md:px-3 px-1 tracking-widest transition-all' : 'tracking-widest hover:text-grey'}>{link.toUpperCase()}</NavLink>
             </li>
           ))} </ul>
         </nav>

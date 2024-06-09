@@ -20,7 +20,7 @@ const Footer = () => {
           </div> 
           <div>
             <p className='footer_title'>Contacts</p>
-            <ul className='w-[190px] grid gap-4'>
+            <ul className='max-w-[190px] grid gap-4'>
               {contactInfo.map((info, index) => (
                 <li key={index} className='flex gap-2 items-center'><img src={info.img} alt={`${info.img.split('/').pop().replace('.svg', '')} icon`} /><span>{info.address}</span></li>
               ))}
