@@ -22,7 +22,7 @@ const Hero = () => {
           <h1 className="font-bold">Lorum</h1>
         </div>
         <div className=""><Button className='absolute left-[35%] sm:left-[40%] max-lg:mt-5 lg:left-0 lg:bottom-0 btn_light' to='./projects' text='View Project' /></div>
-      </div>            
+      </div>
     </Container>
   )
 }

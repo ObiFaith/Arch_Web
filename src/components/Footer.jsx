@@ -9,7 +9,7 @@ const Footer = () => {
         <div>
           <img src={footer_logo} alt="Brand Icon" />
         </div>
-        <div className="flex lg:gap-48 gap-24 font-medium">         
+        <div className="flex lg:gap-48 gap-24 font-medium">
           <div>
             <p className='footer_title'>Information</p>
             <ul className='grid gap-y-4 text-sm'>
@@ -17,12 +17,14 @@ const Footer = () => {
                   <li key={link}><Link className='text-sm hover:underline underline-offset-2' to={link !== 'Main' ? `/${link.toLowerCase()}` : '/'}>{link}</Link></li>              
               ))}
             </ul>
-          </div> 
+          </div>
           <div>
             <p className='footer_title'>Contacts</p>
-            <ul className='max-w-[190px] grid gap-4'>
+            <ul className='grid gap-4'>
               {contactInfo.map((info, index) => (
-                <li key={index} className='flex gap-2 items-center'><img src={info.img} alt={`${info.img.split('/').pop().replace('.svg', '')} icon`} /><span>{info.address}</span></li>
+                <li key={index} className='flex gap-2 items-center'><img src={info.img} alt={`${info.img.split('/').pop().replace('.svg', '')} icon`} />
+                  <span>{Array.isArray(info.address) ? info.address.map((addr, index) => (index ? addr : <span key={index}>{addr} <br /></span>)) : info.address}</span>
+                </li>
               ))}
             </ul>
           </div>
